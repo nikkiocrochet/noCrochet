@@ -1,5 +1,4 @@
-baseURL = "http://example.com"
+baseURL = "http://nikkiocrochet.com"
 languageCode = "en-us"
-title = "Hugo Starter"
-description = "My Starter Hugo Project"
+title = "Nikki-O Crochet"
 theme = "marketplace"

@@ -1,7 +1,7 @@
 {
   "name": "nocrochet",
   "version": "1.0.0",
-  "description": "Starter Hugo site",
+  "description": "Nikki O Crochet",
   "main": "postcss.config.js",
   "dependencies": {
     "autoprefixer": "^9.8.6",

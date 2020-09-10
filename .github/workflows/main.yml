@@ -1,0 +1,18 @@
+name: Deploy site
+
+on:
+  push:
+    branches: [master]
+
+env:
+  REMOTE: nikkiocrochet/nikkiocrochet.github.io.git
+  DEST: public
+  TOKEN: ${{ secrets.TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: 🚀 Build and deploy
+        uses: victoriadrake/hugo-remote@master

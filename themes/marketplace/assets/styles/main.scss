@@ -6,28 +6,43 @@ $breakpoints: (
   desktop: 1024px,
 );
 
+$white: #f9f3f1ff;
+$black: #0b0c09ff;
+$light-green: #8db38bff;
+$medium-green: #56876dff;
+$dark-green: #04724dff;
+
+$backup-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+body {
+  color: $black;
+  background: $white;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Trueno Bold';
+  font-family: 'Trueno Bold', $backup-fonts;
 }
 
 strong,
 b,
 a {
-  font-family: 'Trueno SemiBold';
+  font-family: 'Trueno SemiBold', $backup-fonts;
 }
 
 p {
-  font-family: 'Trueno Regular';
+  font-family: 'Trueno Regular', $backup-fonts;
 }
 
 a {
   text-decoration: none;
+  color: $dark-green;
   &:hover {
-    color: pink;
+    color: $light-green;
   }
 }

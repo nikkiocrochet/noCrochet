@@ -7,7 +7,7 @@ $breakpoints: (
 );
 
 $white: #f9f3f1ff;
-$black: #0b0c09ff;
+$black: #01050d;
 $light-green: #8db38bff;
 $medium-green: #56876dff;
 $dark-green: #04724dff;
@@ -53,5 +53,29 @@ header {
   padding: 1rem 2rem;
   a {
     color: $black;
+  }
+}
+
+.collage {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0px;
+}
+
+.collage img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@include media('<=tablet') {
+  .collage {
+    column-count: 3;
+  }
+}
+@include media('<=phone') {
+  .collage {
+    column-count: 2;
   }
 }

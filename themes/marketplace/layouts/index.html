@@ -1,5 +1,10 @@
 {{ define "main" }}
   <main>
+    <section class="collage">
+      {{ range .Site.Params.Carousel }}
+        <img src="{{ . | absURL }} " alt="carousel image" />
+      {{ end }}
+    </section>
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
     {{ range $paginator.Pages }} {{ .Render "summary" }} {{ end }}
     {{ partial "pagination.html" . }}

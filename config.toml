@@ -3,4 +3,14 @@ languageCode = "en-us"
 title = "Nikki-O Crochet"
 theme = "marketplace"
 [params]
-    instagram= "nikkio_crochet"
+    instagram = "nikkio_crochet"
+    carousel = [
+        "images/collage-1.jpg",
+        "images/collage-2.jpg",
+        "images/collage-3.jpg",
+        "images/collage-4.jpg",
+        "images/collage-5.jpg",
+        "images/collage-6.jpg",
+        "images/collage-7.jpg",
+        "images/collage-8.jpg"
+    ]

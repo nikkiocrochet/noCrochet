@@ -5,6 +5,7 @@
         <img src="{{ . | relURL }} " alt="collage image" />
       {{ end }}
     </section>
+    <p>hello world</p>
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
     {{ range $paginator.Pages }} {{ .Render "summary" }} {{ end }}
     {{ partial "pagination.html" . }}

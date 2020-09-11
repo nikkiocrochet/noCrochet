@@ -6,8 +6,28 @@ $breakpoints: (
   desktop: 1024px,
 );
 
-@include media('<tablet') {
-  body {
-    background: red;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Trueno Bold';
+}
+
+strong,
+b,
+a {
+  font-family: 'Trueno SemiBold';
+}
+
+p {
+  font-family: 'Trueno Regular';
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: pink;
   }
 }

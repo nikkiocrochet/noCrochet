@@ -2,7 +2,7 @@
   <main>
     <section class="collage">
       {{ range .Site.Params.Carousel }}
-        <img src="{{ . | absURL }} " alt="carousel image" />
+        <img src="{{ . | absURL }} " alt="collage image" />
       {{ end }}
     </section>
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}

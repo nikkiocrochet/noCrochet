@@ -2,3 +2,5 @@ baseURL = "http://nikkiocrochet.com"
 languageCode = "en-us"
 title = "Nikki-O Crochet"
 theme = "marketplace"
+[params]
+    instagram= "nikkio_crochet"

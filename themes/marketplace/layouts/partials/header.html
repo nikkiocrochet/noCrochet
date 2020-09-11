@@ -1,12 +1,9 @@
 <header>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-	{{ with .Site.Menus.main }}
-	<nav>
-		<ul>
-			{{ range . }}
-			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	{{ end }}
+  <a href="/"><img src="{{ `images/logo.png` | relURL }}" /></a>
+  <div class="instagram">
+    <i class="fa fa-instagram"></i
+    ><a href="https://instagram.com/{{ .Site.Params.Instagram }}"
+      >{{ .Site.Params.Instagram }}</a
+    >
+  </div>
 </header>

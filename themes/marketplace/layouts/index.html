@@ -1,15 +1,20 @@
 {{ define "main" }}
   <main>
-    <section class="collage">
-      <div class="collage-overlay">
-        <div class="collage-overlay-text">
-          <h1>Welcome to {{ .Site.Title }}!</h1>
-          <p><strong>{{ .Site.Params.Description }}</strong></p>
+    <section>
+      <div class="collage">
+        <div class="collage-overlay">
+          <div class="collage-overlay-text">
+            <h1>Welcome to {{ .Site.Title }}!</h1>
+            <p><strong>{{ .Site.Params.Description }}</strong></p>
+          </div>
         </div>
+        {{ range .Site.Params.Carousel }}
+          <img src="{{ . | relURL }} " alt="collage image" />
+        {{ end }}
       </div>
-      {{ range .Site.Params.Carousel }}
-        <img src="{{ . | relURL }} " alt="collage image" />
-      {{ end }}
+    </section>
+    <section>
+      {{ partial "category-selector" . }}
     </section>
   </main>
 {{ end }}

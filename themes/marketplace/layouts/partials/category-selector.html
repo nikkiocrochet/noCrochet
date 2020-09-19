@@ -1,0 +1,5 @@
+<div class="category-wrapper container">
+  {{ range slice "All" | append .Site.Params.Categories }}
+  <a class="btn" href="/categories/{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+</div>

@@ -19,6 +19,12 @@
       {{ range .Site.Data.products }}
         {{ partial "product.html" . }}
       {{ end }}
+      <div
+        hidden
+        id="snipcart"
+        data-api-key="{{ .Site.Params.Snipcart_key }}"
+        data-config-add-product-behavior="none"
+      ></div>
     </section>
   </main>
 {{ end }}

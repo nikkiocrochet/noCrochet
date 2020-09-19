@@ -9,7 +9,7 @@
     "prettier": "^2.1.1"
   },
   "scripts": {
-    "start": "hugo server"
+    "start": "hugo server --bind 0.0.0.0"
   },
   "author": "tylerjlawson",
   "license": "MIT",

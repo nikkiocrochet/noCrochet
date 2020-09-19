@@ -30,6 +30,7 @@ h4,
 h5,
 h6 {
   font-family: 'Trueno Bold', $backup-fonts;
+  margin-top: 0;
 }
 
 strong,
@@ -42,6 +43,11 @@ p {
   font-family: 'Trueno Regular', $backup-fonts;
 }
 
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   color: $dark-green;
@@ -51,6 +57,7 @@ a {
     }
   }
 }
+
 @include media('>=md') {
   .instagram:hover i:before {
     color: $light-green;
@@ -72,6 +79,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.25rem 3rem;
+    .right-stuff div:first-child {
+      margin-bottom: 1rem;
+    }
     @include media('<md') {
       padding-left: 2rem;
       padding-right: 2rem;
@@ -99,21 +109,19 @@ header {
 }
 
 footer {
-  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 5px solid $light-green;
   p {
-    margin: auto;
+    margin-top: 0;
     text-align: center;
   }
 }
 
 a.btn {
   color: $black;
-  text-transform: uppercase;
-  //   background: ;
   padding: 20px;
   border: 4px solid $black;
   border-radius: 6px;
-  display: inline-block;
   transition: all 0.3s ease 0s;
   @include media('>=md') {
     &:hover {
@@ -179,6 +187,7 @@ a.btn {
   &-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     .btn {
       margin: 0.5rem;

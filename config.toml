@@ -1,23 +1,26 @@
 baseURL = "http://nikkiocrochet.com"
 languageCode = "en-us"
 title = "Nikki-O Crochet"
+author = "Nicole Olander"
 theme = "marketplace"
 [params]
-    instagram = "nikkio_crochet"
-    description = "We make hats and scarves and things"
-    categories = [
-        "For you",
-        "For the home",
-        "For the furry friends",
-        "For the tiny humans"
-    ]
-    carousel = [
-        "images/collage-1.jpg",
-        "images/collage-2.jpg",
-        "images/collage-3.jpg",
-        "images/collage-8.jpg",
-        "images/collage-7.jpg",
-        "images/collage-4.jpg",
-        "images/collage-5.jpg",
-        "images/collage-6.jpg"
-    ]
+  instagram = "nikkio_crochet"
+  description = "We make hats and scarves and things"
+  products_title = "Our stuff"
+  categories = [
+    "For you",
+    "For the home",
+    "For the furry friends",
+    "For the tiny humans"
+  ]
+  carousel = [
+    "images/collage-1.jpg",
+    "images/collage-2.jpg",
+    "images/collage-3.jpg",
+    "images/collage-8.jpg",
+    "images/collage-7.jpg",
+    "images/collage-4.jpg",
+    "images/collage-5.jpg",
+    "images/collage-6.jpg"
+  ]
+  snipcart_key = "MzcyMTAwNGYtYzY3ZC00NmRjLThhMDMtN2NjM2NlMWJhNjMzNjM3MzUzMDQxMjAyMzgwNDky"

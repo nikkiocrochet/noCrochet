@@ -14,7 +14,11 @@
       </div>
     </section>
     <section>
+      <h2>{{ .Site.Params.Products_title }}</h2>
       {{ partial "category-selector" . }}
+      {{ range .Site.Data.products }}
+        {{ partial "product.html" . }}
+      {{ end }}
     </section>
   </main>
 {{ end }}

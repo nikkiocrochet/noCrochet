@@ -42,7 +42,11 @@
 
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+      href="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <link rel="stylesheet" href="{{ `styles/normalize.css` | relURL }}" />
     <link rel="stylesheet" href="{{ `styles/typebase.css` | relURL }}" />
@@ -54,6 +58,16 @@
       integrity="{{ $styles.Data.Integrity }}"
       media="screen"
     />
+
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.js"
+    ></script>
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="{{ .Site.Params.Snipcart_key }}"
+    ></div>
   </head>
   <body>
     {{ partial "header" . }}

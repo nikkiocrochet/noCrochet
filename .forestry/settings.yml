@@ -6,9 +6,15 @@ webhook_url:
 sections:
 - type: directory
   path: products
-  label: Pages
-  create: all
+  label: Products
+  create: documents
   match: "*"
+- type: directory
+  path: data/reviews
+  label: Reviews
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".toml"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

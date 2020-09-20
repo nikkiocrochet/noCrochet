@@ -24,5 +24,15 @@ fields:
       format: markdown
     max: 50
   label: Message
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
 pages:
 - data/reviews/cool-dog.toml

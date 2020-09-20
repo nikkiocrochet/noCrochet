@@ -45,3 +45,5 @@ fields:
   - For the furry friends
   - For the tiny humans
   label: Categories
+pages:
+- products/some-hat.md

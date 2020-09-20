@@ -21,7 +21,7 @@ sections:
   - review
 - type: document
   path: config.toml
-  label: Site Settings (Be Careful)
+  label: Site Settings
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''

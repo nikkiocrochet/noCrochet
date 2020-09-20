@@ -6,9 +6,13 @@
       {{ partial "category-selector" . }}
       <div class="container">
         <div class="products flex-grid">
-          {{ range .Pages.ByDate }}
-            {{ partial "product.html" .Params }}
-          {{ end }}
+          {{ range .Sections }}
+            {{ if eq .Name "Products" }}
+              {{ range .Pages.ByDate }}
+                {{ partial "product.html" .Params }}
+              {{ end }}
+            {{end}}
+          {{end}}
         </div>
       </div>
       {{ partial "snipcart.html" . }}
@@ -17,9 +21,16 @@
       <h2>{{ .Site.Params.Reviews_title }}</h2>
       <div class="container">
         <div class="reviews flex-grid">
-          {{ range .Site.Data.reviews }}
-            {{partial "review.html" . }}
-          {{ end }}
+          {{ range .Pages }}
+            {{.}}
+            {{end}}
+          {{ range .Sections }}
+            {{ if eq .Name "Reviews" }}
+              {{ range .Pages }}
+                {{ partial "review.html" .Params }}
+              {{ end }}
+            {{end}}
+          {{end}}
         </div>
       </div>
     </section>

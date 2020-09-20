@@ -2,7 +2,6 @@ baseURL = "http://nikkiocrochet.com"
 title = "Nikki-O Crochet"
 author = "Nicole Olander"
 theme = "marketplace"
-contentDir = "products"
 [params]
   instagram = "nikkio_crochet"
   description = "We make hats and scarves and things"

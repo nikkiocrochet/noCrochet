@@ -11,15 +11,5 @@
       </div>
       {{ partial "snipcart.html" . }}
     </section>
-    <section>
-      <h2>{{ .Site.Params.Reviews_title }}</h2>
-      <div class="container">
-        <div class="reviews flex-grid">
-          {{ range .Site.Data.reviews.ByDate }}
-            {{partial "review.html" . }}
-          {{ end }}
-        </div>
-      </div>
-    </section>
   </main>
 {{ end }}

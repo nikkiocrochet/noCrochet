@@ -57,3 +57,4 @@ fields:
   default: now
 pages:
 - products/some-hat.md
+- products/something-new.md

@@ -1,16 +1,14 @@
-<figure class="snip1574">
+<figure class="review grid-item">
   <img
-    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample40.jpg"
-    alt="profile-sample2"
+    src="{{ .image }}"
+    alt="review image"
   />
   <figcaption>
     <blockquote>
       <p>
-        Which is worse, that everyone has his price, or that the price is always
-        so low.
+        {{ .message }}
       </p>
     </blockquote>
-    <h3>Sue Shei</h3>
-    <h5>Founder</h5>
+    <h3>{{ .writer }}</h3>
   </figcaption>
 </figure>

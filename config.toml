@@ -4,11 +4,11 @@ title = "Nikki-O Crochet"
 author = "Nicole Olander"
 theme = "marketplace"
 contentDir = "products"
-dataDir = "reviews"
 [params]
   instagram = "nikkio_crochet"
   description = "We make hats and scarves and things"
   products_title = "Our stuff"
+  reviews_title = "Our reviews"
   categories = [
     "For you",
     "For the home",

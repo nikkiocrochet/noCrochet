@@ -1,6 +1,7 @@
 ---
 label: Review
 hide_body: true
+display_field: writer
 fields:
 - name: writer
   type: text

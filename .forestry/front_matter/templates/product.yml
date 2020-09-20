@@ -37,3 +37,11 @@ fields:
       format: markdown
     max: 30
   label: Description
+- name: categories
+  type: tag_list
+  default:
+  - For you
+  - For the home
+  - For the furry friends
+  - For the tiny humans
+  label: Categories

@@ -1,4 +1,25 @@
 ---
 label: Review
 hide_body: true
-fields: []
+fields:
+- name: writer
+  type: text
+  config:
+    required: false
+    max: 15
+  label: Writer
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: message
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 50
+  label: Message

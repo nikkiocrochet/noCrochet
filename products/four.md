@@ -1,4 +1,6 @@
++++
 name = "Cat"
-price = 10
-image = "images/collage-2.jpg"
+price = 100
+image = "/images/collage-5.jpg"
 description = "This is a silly little cat"
++++

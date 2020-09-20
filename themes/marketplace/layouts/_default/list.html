@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <main>
+    {{ partial "collage.html" . }}
+    <section>
+      <h2>{{ .Site.Params.Products_title }}</h2>
+      {{ partial "category-selector" . }}
+      <div class="container">
+        <div class="products">
+          {{ range .Pages }}
+            {{ partial "product.html" .Params }}
+          {{ end }}
+        </div>
+      </div>
+      {{ partial "snipcart.html" . }}
+    </section>
+  </main>
+{{ end }}

@@ -5,12 +5,10 @@
   "main": "postcss.config.js",
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "hugo-bin": "^0.63.1",
     "postcss-cli": "^7.1.2"
   },
   "scripts": {
-    "start": "hugo server --bind 0.0.0.0",
-    "start:forestry": "hugo server -D -E -F --renderToDisk -d public"
+    "start": "hugo server --bind 0.0.0.0"
   },
   "author": "tylerjlawson",
   "license": "MIT",

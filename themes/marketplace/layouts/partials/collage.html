@@ -1,0 +1,13 @@
+<section>
+  <div class="collage">
+    <div class="collage-overlay">
+      <div class="collage-overlay-text">
+        <h1>Welcome to {{ .Site.Title }}!</h1>
+        <p><strong>{{ .Site.Params.Description }}</strong></p>
+      </div>
+    </div>
+    {{ range .Site.Params.Carousel }}
+      <img src="{{ . | relURL }} " alt="collage image" />
+    {{ end }}
+  </div>
+</section>

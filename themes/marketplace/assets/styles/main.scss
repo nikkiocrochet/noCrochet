@@ -37,11 +37,12 @@ strong,
 b,
 a {
   font-family: 'Trueno SemiBold', $backup-fonts;
+  font-size: 24px;
 }
 
-p,
-span {
+p {
   font-family: 'Trueno Regular', $backup-fonts;
+  font-size: 20px;
 }
 
 h2 {

@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Nikki-O Crochet"
 author = "Nicole Olander"
 theme = "marketplace"
+contentDir = "products"
+dataDir = "testimonials"
 [params]
   instagram = "nikkio_crochet"
   description = "We make hats and scarves and things"

@@ -51,11 +51,10 @@
     <link rel="stylesheet" href="{{ `styles/normalize.css` | relURL }}" />
     <link rel="stylesheet" href="{{ `styles/typebase.css` | relURL }}" />
     <link rel="stylesheet" href="{{ `fonts/style.css` | relURL }}" />
-    {{ $styles := resources.Get "styles/main.scss"  | toCSS | postCSS (dict "config" "./postcss.config.js")  | fingerprint }}
+    {{ $styles := resources.Get "styles/main.scss"  | toCSS | postCSS (dict "config" "./postcss.config.js") }}
     <link
       rel="stylesheet"
       href="{{ $styles.RelPermalink }}"
-      integrity="{{ $styles.Data.Integrity }}"
       media="screen"
     />
     {{ with .Params.forestry_instant_preview_id }}

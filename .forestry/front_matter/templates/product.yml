@@ -1,4 +1,39 @@
 ---
 label: Product
 hide_body: true
-fields: []
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+    max: 20
+  label: Name
+  description: Name of your product (each product name must be unique, for example,
+    you cannot have two items named 'hat')
+- name: price
+  type: number
+  label: Price
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 30
+  label: Description

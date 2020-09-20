@@ -35,4 +35,5 @@ fields:
     display_utc: false
   default: now
 pages:
+- data/reviews/a-cat.toml
 - data/reviews/cool-dog.toml

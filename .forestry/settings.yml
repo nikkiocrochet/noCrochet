@@ -9,6 +9,8 @@ sections:
   label: Products
   create: documents
   match: "*"
+  templates:
+  - product
 - type: directory
   path: data/reviews
   label: Reviews

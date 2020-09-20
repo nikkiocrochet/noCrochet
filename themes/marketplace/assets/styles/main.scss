@@ -39,7 +39,8 @@ a {
   font-family: 'Trueno SemiBold', $backup-fonts;
 }
 
-p {
+p,
+span {
   font-family: 'Trueno Regular', $backup-fonts;
 }
 
@@ -54,6 +55,7 @@ a {
   @include media('>=md') {
     &:hover {
       color: $light-green;
+      cursor: pointer;
     }
   }
 }
@@ -71,6 +73,20 @@ section {
 .container {
   max-width: 1250px;
   margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  @include media('<=md') {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include media('<sm') {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include media('<xs') {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 header {
@@ -78,17 +94,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.25rem 3rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
     .right-stuff div:first-child {
       margin-bottom: 1rem;
-    }
-    @include media('<md') {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    @include media('<sm') {
-      padding-left: 1rem;
-      padding-right: 1rem;
     }
   }
 
@@ -191,6 +201,65 @@ a.btn {
     align-items: center;
     .btn {
       margin: 0.5rem;
+    }
+  }
+}
+
+$product-br: 6px;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  @include media('>sm') {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .product {
+    margin: 1rem;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: $product-br;
+    width: calc(33% - 2rem);
+    @include media('<=lg') {
+      width: calc(50% - 2rem);
+    }
+    @include media('<=sm') {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    img {
+      width: 100%;
+      height: 375px;
+      object-fit: cover;
+      border-radius: $product-br $product-br 0 0;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    h3,
+    p {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-top: 0;
+    }
+    &__titlebar {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.snipcart {
+  &-modal__container {
+    top: 141px;
+  }
+  &-cart-header {
+    & > div {
+      display: none;
     }
   }
 }

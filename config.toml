@@ -4,7 +4,7 @@ title = "Nikki-O Crochet"
 author = "Nicole Olander"
 theme = "marketplace"
 contentDir = "products"
-dataDir = "testimonials"
+dataDir = "reviews"
 [params]
   instagram = "nikkio_crochet"
   description = "We make hats and scarves and things"
@@ -25,4 +25,5 @@ dataDir = "testimonials"
     "images/collage-5.jpg",
     "images/collage-6.jpg"
   ]
+  not_found = "Sorry, but we do not have any products in this category yet."
   snipcart_key = "MzcyMTAwNGYtYzY3ZC00NmRjLThhMDMtN2NjM2NlMWJhNjMzNjM3MzUzMDQxMjAyMzgwNDky"

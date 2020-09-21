@@ -190,6 +190,9 @@ a.btn {
   }
   @include media('<=xs') {
     column-count: 1;
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 }
 

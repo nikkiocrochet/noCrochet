@@ -37,14 +37,30 @@ fields:
       format: markdown
     max: 30
   label: Description
-- name: categories
+- name: category
+  type: select
+  default: For you
+  config:
+    required: true
+    options:
+    - For you
+    - For the home
+    - For the furry friends
+    - For the tiny humans
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: sizes
   type: tag_list
-  default:
-  - For you
-  - For the home
-  - For the furry friends
-  - For the tiny humans
-  label: Categories
+  default: []
+  label: Sizes
+- name: colors
+  type: tag_list
+  default: []
+  label: Colors
 - name: date
   type: datetime
   label: Date

@@ -270,6 +270,19 @@ $product-br: 6px;
       display: none;
     }
   }
+  @include media('>=md') {
+    .snipcart-dropdown-custom-field--standard {
+      width: 50%;
+    }
+  }
+  @include media('<md') {
+    .snipcart-item-line__header {
+      height: 200px;
+      figure {
+        height: 200px;
+      }
+    }
+  }
 }
 
 .reviews {

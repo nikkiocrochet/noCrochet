@@ -15,6 +15,16 @@
         data-item-url="/"
         data-item-image="{{ .image }}"
         data-item-description="{{ .description }}"
+        {{ with .sizes }}
+        {{ $sizes := delimit . "|" }}
+        data-item-custom1-name="Choose a size"
+        data-item-custom1-options="{{ $sizes }}"
+        {{ end }}
+        {{ with .colors }}
+        {{ $colors := delimit . "|" }}
+        data-item-custom1-name="Choose a color"
+        data-item-custom1-options="{{ $colors }}"
+        {{ end }}
       >
         Add to cart
       </a>

@@ -71,6 +71,24 @@ fields:
     time_format: 
     display_utc: false
   default: now
+- name: colorlist
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: name
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: colorList
 pages:
 - products/some-hat.md
 - products/something-new.md

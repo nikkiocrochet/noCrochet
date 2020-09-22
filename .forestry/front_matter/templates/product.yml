@@ -71,25 +71,6 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: testcolors
-  type: field_group
-  config: {}
-  fields:
-  - name: name
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: name
-  - name: colorimage
-    type: file
-    config:
-      maxSize: 64
-    label: colorImage
-  label: testColors
 pages:
 - products/some-hat.md
 - products/something-new.md
